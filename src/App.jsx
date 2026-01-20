@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <div className=''>
+    <div className='bg-[#F5F6F7]'>
       
       <BrowserRouter>
       <Navbar/>
