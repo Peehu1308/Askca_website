@@ -142,7 +142,7 @@ const HomeScreen = () => {
 {/* Team section */}
 <section className="px-6 md:px-12 py-16 bg-[#FFFFFF]">
   <h2 className="text-4xl md:text-5xl font-extrabold text-center text-[#101010] mb-6 relative inline-block">
-    Our Team
+    Our Founders
     <span className="block w-20 h-1 bg-[#F49426] mx-auto mt-2 rounded"></span>
   </h2>
 
