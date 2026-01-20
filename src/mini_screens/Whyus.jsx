@@ -45,12 +45,12 @@ const WhyUs = () => {
     <div className="w-full bg-[#F9FAFB] text-[#0F172A]">
 
       {/* HERO */}
-      <section className="px-6 md:px-12 py-24 bg-[#36454F] text-white text-center">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] text-[#101010] text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight">
             Why ASKCA
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
             At ASKCA Financial Consultants, we combine Chartered
             Accountant–led expertise with a consulting-driven mindset
             to deliver practical, compliant, and outcome-oriented solutions.
