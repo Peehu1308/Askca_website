@@ -10,6 +10,9 @@ import IndirectTax from './mini_screens/IndirectTax'
 import BusinessAdvisory from './mini_screens/Buisness'
 import OtherServices from './mini_screens/OtherServices'
 import Services from './screen/Services'
+import Coporate  from './mini_screens/Coporate'
+import Whyus from './mini_screens/Whyus'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -24,7 +27,9 @@ function App() {
         <Route path="/team" element={<Team/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
-        
+        <Route path="/coporate" element={<Coporate/>}/>
+        <Route path="/why" element={<Whyus/>}/>
+
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/services/direct-tax" element={<DirectTax />} />
         <Route path="/services/indirect-tax" element={<IndirectTax/>} />
@@ -32,6 +37,7 @@ function App() {
         <Route path="/services/otherservices" element={<OtherServices/>} />
 
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   )
