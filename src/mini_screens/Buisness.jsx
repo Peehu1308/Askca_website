@@ -100,7 +100,7 @@ const BusinessAdvisory = () => {
         </Link>
       </section>
 
-      <Footer />
+
     </div>
   );
 };
