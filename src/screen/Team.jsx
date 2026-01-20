@@ -9,7 +9,7 @@ const Team = () => {
       {/* Heading */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#101010] mb-4">
-          Our Leadership
+          Our Founders
         </h1>
         <p className="text-[#182729] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
           Meet the professionals driving ASKCA with expertise, integrity, and strategic financial insight.
@@ -17,7 +17,7 @@ const Team = () => {
       </div>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
         <Team_box
           title="CA Shivam Kumar Aggarwal"
           desc="Chartered Accountant with 3+ years of experience at Ernst & Young, specializing in Indian & international taxation, regulatory compliance (SEBI/RBI), and DTAA advisory. Has advised 250+ domestic and global corporates, including PE funds, AIFs, PSUs, and financial institutions."
