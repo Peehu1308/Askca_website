@@ -86,7 +86,7 @@ const OtherServices = () => {
         </Link>
       </section>
 
-      <Footer />
+
     </div>
   );
 };
