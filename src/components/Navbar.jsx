@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.avif";
+import pngimg from "../assets/Logo.png"
 
 const ServiceMegaMenu = () => {
   const services = [
@@ -16,7 +17,7 @@ const ServiceMegaMenu = () => {
   },
   {
     name: "Investment Services",
-    path: "/services/investment-services",
+    path: "/investment",
     other: [
       { label: "Portfolio Consultancy", path: "/services/portfolio-consultancy" },
       { label: "Wealth Advisory", path: "/services/wealth-advisory" },
