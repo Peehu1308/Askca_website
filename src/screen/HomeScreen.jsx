@@ -203,7 +203,7 @@ profile={about}/>
       </section> */}
 
       
-        <Footer/>
+
     </div>
   );
 };
