@@ -115,7 +115,6 @@ const IndirectTax = () => {
         </Link>
       </section>
 
-      <Footer />
     </div>
   );
 };
