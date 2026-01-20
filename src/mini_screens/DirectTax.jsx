@@ -143,7 +143,7 @@ const DirectTax = () => {
         </Link>
       </section>
 
-      <Footer />
+
     </div>
   );
 };
