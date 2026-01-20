@@ -4,7 +4,7 @@ import aboutImg from "../assets/about.jpeg";
 
 const About = () => {
   return (
-    <div className="w-full bg-white text-[#101010]">
+    <div className="w-full bg-[#F5F6F7] text-[#101010]">
 
       {/* PAGE HEADER */}
       <section className="bg-[#F9FAFB] px-6 md:px-12 py-16 max-w-7xl mx-auto">
