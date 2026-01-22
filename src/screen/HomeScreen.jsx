@@ -14,7 +14,7 @@ const HomeScreen = () => {
       <section className="px-12 py-16 flex flex-col md:flex-row items-center gap-12">
   <div className="flex-1">
     <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6 leading-tight">
-      ASKCA
+      ASK<span className="text-[#F49426]">CA</span>
     </h1>
 
     <p className="text-lg md:text-xl text-[#182729] leading-relaxed max-w-xl mb-8">
@@ -116,7 +116,7 @@ const HomeScreen = () => {
     {/* Text */}
     <div className="md:w-1/2 space-y-6">
       <p className="text-[#182729] text-lg md:text-xl leading-relaxed">
-        ASKCA is a comprehensive financial consultancy firm founded by seasoned Chartered Accountants with deep expertise across Financial Planning, Accounting, Direct and Indirect Taxation, International Taxation, Secretarial Services, and Management Consulting.
+        ASK<span className="text-[#F49426]">CA</span> is a comprehensive financial consultancy firm founded by seasoned Chartered Accountants with deep expertise across Financial Planning, Accounting, Direct and Indirect Taxation, International Taxation, Secretarial Services, and Management Consulting.
       </p>
       <p className="text-[#182729] text-lg md:text-xl leading-relaxed">
         With a strong presence in the Delhi-NCR region, ASKCA delivers tailored financial solutions to individuals, partnership firms, startups, and corporates.
