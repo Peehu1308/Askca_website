@@ -14,6 +14,12 @@ import Coporate  from './mini_screens/Coporate'
 import Whyus from './mini_screens/Whyus'
 import Footer from './components/Footer'
 import InvestmentServices from './mini_screens/Investment'
+import PortfolioConsultancy from './mini_screens/Portfolio'
+import WealthAdvisory from './mini_screens/Wealth'
+import TaxEfficientInvestments from './mini_screens/tax'
+import RetirementPlanning from './mini_screens/retirement'
+import MutualFundAdvisory from './mini_screens/mutual'
+import InsurancePlanning from './mini_screens/insurance'
 
 function App() {
 
@@ -31,6 +37,12 @@ function App() {
         <Route path="/coporate" element={<Coporate/>}/>
         <Route path="/why" element={<Whyus/>}/>
         <Route path="/investment" element={<InvestmentServices/>}/>
+        <Route path="/portfolio" element={<PortfolioConsultancy/>}/>
+        <Route path="/wealth" element={<WealthAdvisory/>}/>
+        <Route path="/tax" element={<TaxEfficientInvestments/>}/>
+        <Route path="/retirement" element={<RetirementPlanning/>}/>
+        <Route path="/mutual" element={<MutualFundAdvisory/>}/>
+        <Route path="/insurance" element={<InsurancePlanning/>}/>
 
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/services/direct-tax" element={<DirectTax />} />
