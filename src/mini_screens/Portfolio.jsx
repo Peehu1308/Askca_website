@@ -13,17 +13,19 @@ const PortfolioConsultancy = () => {
     <div className="w-full bg-[#F9FAFB] text-[#101010]">
 
       {/* HERO */}
-      <section className="px-6 md:px-12 py-24 bg-[#F5F5F5] border-b border-gray-200">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4]">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
-            Portfolio Consultancy
+          <h1 className="text-5xl font-semibold mb-6">
+            Portfolio <span className="text-[#F49426]">Consultancy</span>
           </h1>
-          <p className="text-lg md:text-xl text-[#182729] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg text-[#182729] leading-relaxed">
             Disciplined portfolio construction designed to balance risk,
             optimize returns, and align investments with long-term financial goals.
+          
           </p>
         </div>
       </section>
+      
 
       {/* CONTENT */}
       <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto grid md:grid-cols-2 gap-14">
