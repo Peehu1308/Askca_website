@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.avif";
-import pngimg from "../assets/Logo.png"
 
-const ServiceMegaMenu = () => {
-  const services = [
+/* =======================
+   SERVICE MEGA MENU DATA
+======================= */
+const services = [
   {
     name: "Corporate Finance",
     path: "/coporate",
@@ -19,8 +20,8 @@ const ServiceMegaMenu = () => {
     name: "Investment Services",
     path: "/investment",
     other: [
-      { label: "Portfolio Consultancy", path: "/services/portfolio-consultancy" },
-      { label: "Wealth Advisory", path: "/services/wealth-advisory" },
+      { label: "Portfolio Consultancy", path: "/portfolio" },
+      { label: "Wealth Advisory", path: "/wealth" },
       { label: "Retirement Planning", path: "/services/retirement-planning" },
       { label: "Tax-efficient Investment Planning", path: "/services/tax-planning" },
       { label: "Mutual Funds & Stock Analysis", path: "/services/market-analysis" },
@@ -46,21 +47,24 @@ const ServiceMegaMenu = () => {
   },
 ];
 
-
-  const [activeservice,setactiveservice]=useState(0);
+/* =======================
+   SERVICE MEGA MENU
+======================= */
+const ServiceMegaMenu = () => {
+  const [activeService, setActiveService] = useState(0);
 
   return (
-    <div className="absolute right-0 left-0 top-full w-screen bg-[#1F2933] text-white z-50">
-      <div className="max-w-full mx-auto px-12 py-14 grid grid-cols-3 gap-12">
+    <div className="fixed inset-x-0 top-[80px] bg-[#1F2933] text-white z-50">
+      <div className="w-full mx-auto px-12 py-14 grid grid-cols-3 gap-12">
         <div>
           <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
-          <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <p className="text-sm text-gray-300 mb-6 leading-relaxed">
             We help businesses navigate taxation, compliance, and financial
             strategy with precision, integrity, and long-term vision.
           </p>
           <Link
-            className="border border-white px-6 py-2 text-sm hover:bg-white hover:text-black transition"
             to="/services"
+            className="border border-white px-6 py-2 text-sm hover:bg-white hover:text-black transition"
           >
             Explore Services
           </Link>
@@ -68,91 +72,32 @@ const ServiceMegaMenu = () => {
 
         <div className="space-y-4">
           {services.map((service, index) => (
-            <div>
-              <Link
-                key={index}
-                to={service.path}
-                onMouseEnter={()=>setactiveservice(index)}
-                className={`flex justify-between items-center border-b border-white/10 pb-3 
-                 hover:text-[#F49426] transition cursor-pointer
-                 ${
-                  activeservice===index?"text-[#F49426]":
-                  "hover:text-[#F49426]"
-                 }`}
-              >
-                <span className="text-sm">{service.name}</span>
-                <span>→</span>
-              </Link>
-
-              
-            </div>
-          ))}
-        </div>
-        <div>
-                <h4 className="text-[#F49426] font-semibold mb-4">Spotlight</h4>
-
-                <ul className="space-y-3 text-sm text-gray-300">
-                  {services[activeservice].other.map((item, idx) => (
-                    <li key={idx}>
-  <Link
-    to={item.path}
-    className="hover:text-white cursor-pointer transition"
-  >
-    {item.label}
-  </Link>
-</li>
-
-                  ))}
-                </ul>
-              </div>
-      </div>
-    </div>
-  );
-};
-
-const Aboutmegamenu = () => {
-  return (
-    <div className="absolute left-0 top-full w-screen bg-[#36454F] text-white z-50 ">
-      <div className="max-w-7xl mx-auto px-12 py-14 grid grid-cols-3 gap-12">
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">About Us</h3>
-
-          <p className="text-sm text-gray-300 leading-relaxed mb-6">
-            We are a multidisciplinary professional firm delivering trusted
-            advisory, compliance, and financial solutions to businesses,
-            startups, and individuals with integrity and precision.
-          </p>
-
-          <Link
-            className="border border-white px-6 py-2 text-sm hover:bg-white hover:text-black transition"
-            to="/about"
-          >
-            Learn More
-          </Link>
-        </div>
-
-        <div className="space-y-4">
-          {[
-            "Alliances & Partnerships",
-            "Alumni Network",
-            "Connect With Us",
-            "Our Locations",
-            "Our Purpose",
-            "Our People",
-            "Our Values",
-          ].map((item) => (
-            <div className="flex justify-between items-center border-b border-white/10 pb-3">
-              <span>{item}</span>
+            <Link
+              key={index}
+              to={service.path}
+              onMouseEnter={() => setActiveService(index)}
+              className={`flex justify-between items-center border-b border-white/10 pb-3 transition ${
+                activeService === index
+                  ? "text-[#F49426]"
+                  : "hover:text-[#F49426]"
+              }`}
+            >
+              <span className="text-sm">{service.name}</span>
               <span>→</span>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div>
           <h4 className="text-[#F49426] font-semibold mb-4">Spotlight</h4>
-          <ul className="space-y-3 text-sm">
-            <li>Vision & Leadership</li>
-            <li>Mission & Culture</li>
+          <ul className="space-y-3 text-sm text-gray-300">
+            {services[activeService].other.map((item, idx) => (
+              <li key={idx}>
+                <Link to={item.path} className="hover:text-white transition">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -160,80 +105,174 @@ const Aboutmegamenu = () => {
   );
 };
 
-const Navbar = () => {
-  const [openservice, setopenservice] = useState(false);
-  const [openabout, setopenabout] = useState(false);
+/* =======================
+   ABOUT MEGA MENU
+======================= */
+const aboutData = [
+  {
+    name: "Our Purpose",
+    spotlight: [
+      "Enable informed financial decision-making",
+      "Disciplined & transparent advisory",
+      "High-quality compliance solutions",
+    ],
+  },
+  {
+    name: "Our Values",
+    spotlight: [
+      "Integrity – Highest ethical standards",
+      "Independence – Conflict-free advice",
+      "Excellence – Technical depth & rigour",
+      "Confidentiality – Client data protection",
+      "Accountability – Ownership of outcomes",
+    ],
+  },
+  {
+    name: "Our Approach",
+    spotlight: [
+      "Understanding business & regulations",
+      "Identifying risks & opportunities",
+      "Designing compliant solutions",
+      "Supporting execution & implementation",
+      "Ongoing advisory & compliance support",
+    ],
+  },
+];
+
+const AboutMegaMenu = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <div className="relative z-[1000] flex items-center justify-between bg-[#1F2933] px-8 py-4 text-white">
-      {/* Left: Logo + Nav Links */}
-      <div className="flex items-center gap-10">
-        {/* Logo */}
-        <Link to="/">
-          <img
-            src={logo}
-            alt="logo"
-            className="bg-[#1F2933] h-16 w-16 object-contain"
-          />
-        </Link>
-
-        {/* Nav Links */}
-        <div className="flex items-center gap-6">
-          <div
-            className="relative"
-            onMouseEnter={() => setopenservice(true)}
-            onMouseLeave={() => setopenservice(false)}
-          >
-            <span className="text-lg font-bold hover:text-[#F49426] transition">
-              Service
-            </span>
-
-            {openservice && <ServiceMegaMenu />}
-          </div>
-          {/* <Link to="/" className="text-lg font-bold hover:opacity-80 transition">
-            Service
-          </Link> */}
-          {/* <Link to="/about" className="text-lg font-bold hover:opacity-80 transition">
-            About Us
-          </Link> */}
-          <div
-            className="relative"
-            onMouseEnter={() => setopenabout(true)}
-            onMouseLeave={() => setopenabout(false)}
-          >
-            <span className="text-lg font-bold hover:text-[#F49426] transition">
-              About Us
-            </span>
-
-            {openabout && <Aboutmegamenu />}
-          </div>
+    <div className="fixed inset-x-0 top-[80px] bg-[#1F2933] text-white z-50">
+      <div className="w-full mx-auto px-12 py-14 grid grid-cols-3 gap-12">
+        <div>
+          <h3 className="text-2xl font-semibold mb-4">About Us</h3>
+          <p className="text-sm text-gray-300 mb-6 leading-relaxed">
+            We are a multidisciplinary professional firm delivering trusted
+            advisory, compliance, and financial solutions with integrity and precision.
+          </p>
           <Link
-            to="/why"
-            className="text-lg font-bold hover:text-[#F49426] transition"
+            to="/about"
+            className="border border-white px-6 py-2 text-sm hover:bg-white hover:text-black transition"
           >
-            Why Us
-          </Link>
-          <Link
-            to="/team"
-            className="text-lg font-bold hover:text-[#F49426] transition"
-          >
-            Team
-          </Link>
-          <Link
-            to="/contact"
-            className="text-lg font-bold hover:text-[#F49426] transition"
-          >
-            Contact Us
+            Learn More
           </Link>
         </div>
-      </div>
 
-      {/* Right: CTA Button */}
-      <Link
-        to="/contact"
-        className="bg-[#F49426] px-5 py-2.5 rounded-md font-semibold hover:opacity-90 transition z-100"
-      >
-        Book an Appointment
-      </Link>
+        <div className="space-y-4">
+          {aboutData.map((item, index) => (
+            <div
+              key={index}
+              onMouseEnter={() => setActiveIndex(index)}
+              className={`flex justify-between items-center border-b border-white/10 pb-3 cursor-pointer transition ${
+                activeIndex === index
+                  ? "text-[#F49426]"
+                  : "hover:text-[#F49426]"
+              }`}
+            >
+              <span>{item.name}</span>
+              <span>→</span>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <h4 className="text-[#F49426] font-semibold mb-4">Spotlight</h4>
+          <ul className="space-y-3 text-sm text-gray-300">
+            {aboutData[activeIndex].spotlight.map((point, idx) => (
+              <li key={idx} className="hover:text-white transition">
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* =======================
+   NAVBAR (CLICK LOGIC ADDED)
+======================= */
+const Navbar = () => {
+  const [openService, setOpenService] = useState(false);
+  const [openAbout, setOpenAbout] = useState(false);
+  const navbarRef = useRef(null);
+
+  const toggleService = () => {
+    setOpenService(prev => !prev);
+    setOpenAbout(false);
+  };
+
+  const toggleAbout = () => {
+    setOpenAbout(prev => !prev);
+    setOpenService(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setOpenService(false);
+        setOpenAbout(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div ref={navbarRef} className="relative">
+      <div className="relative z-[1000] flex items-center justify-between bg-[#1F2933] px-8 py-4 text-white">
+        <div className="flex items-center gap-10">
+          <Link to="/">
+            <img src={logo} alt="logo" className="h-16 w-16 object-contain" />
+          </Link>
+
+          <div className="flex items-center gap-6">
+            <div className="relative">
+              <span
+                onClick={toggleService}
+                className="text-lg font-bold hover:text-[#F49426] transition cursor-pointer"
+              >
+                Service
+              </span>
+              {openService && <ServiceMegaMenu />}
+            </div>
+
+            <div className="relative">
+              <span
+                onClick={toggleAbout}
+                className="text-lg font-bold hover:text-[#F49426] transition cursor-pointer"
+              >
+                About Us
+              </span>
+              {openAbout && <AboutMegaMenu />}
+            </div>
+
+            <Link to="/why" className="text-lg font-bold hover:text-[#F49426] transition">
+              Why Us
+            </Link>
+
+            <Link to="/team" className="text-lg font-bold hover:text-[#F49426] transition">
+              Team
+            </Link>
+
+            <Link to="/contact" className="text-lg font-bold hover:text-[#F49426] transition">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+
+        <Link
+          to="/contact"
+          className="bg-[#F49426] px-5 py-2.5 rounded-md font-semibold hover:opacity-90 transition"
+        >
+          Book an Appointment
+        </Link>
+      </div>
     </div>
   );
 };
