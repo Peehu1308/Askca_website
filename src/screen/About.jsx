@@ -10,10 +10,10 @@ const About = () => {
       <section className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-20">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-            About ASKCA
+            About ASK<span className="text-[#F49426]">CA</span>
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            ASKCA is a comprehensive financial consultancy firm founded by
+            ASK<span className="text-[#F49426]">CA</span> is a comprehensive financial consultancy firm founded by
             seasoned Chartered Accountants, delivering high-quality advisory
             and compliance solutions across financial, tax, regulatory, and
             management domains.
@@ -145,7 +145,7 @@ const About = () => {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 };
