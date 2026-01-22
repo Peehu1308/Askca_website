@@ -32,7 +32,7 @@ function App() {
         <Navbar />
 
         {/* GLOBAL OFFSET FOR FIXED NAVBAR */}
-        <main className="">
+        <main className="md:pt-[96px] lg:pt-[96px]">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/team" element={<Team />} />
