@@ -146,7 +146,7 @@ const HomeScreen = () => {
     <span className="block w-20 h-1 bg-[#F49426] mx-auto mt-2 rounded"></span>
   </h2>
 
- <div className="grid grid-cols-2 gap-4">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
    <Team_box title="CA Shivam Kumar Aggarwal 
 " 
 desc="Chartered Accountant with 3+ years of experience at Ernst & Young, specializing in Indian and international taxation, regulatory compliance (SEBI/RBI), and DTAA advisory. Has advised 250+ domestic and global corporates, including PE funds, AIFs, PSUs, and financial institutions."
