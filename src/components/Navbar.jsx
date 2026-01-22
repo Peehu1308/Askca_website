@@ -22,11 +22,11 @@ const services = [
     other: [
       { label: "Portfolio Consultancy", path: "/portfolio" },
       { label: "Wealth Advisory", path: "/wealth" },
-      { label: "Retirement Planning", path: "/services/retirement-planning" },
-      { label: "Tax-efficient Investment Planning", path: "/services/tax-planning" },
-      { label: "Mutual Funds & Stock Analysis", path: "/services/market-analysis" },
-      { label: "Insurance Planning", path: "/services/insurance-planning" },
-      // { label: "Diversified Portfolio Construction", path: "/services/portfolio-construction" },
+      { label: "Retirement Planning", path: "/retirement" },
+      { label: "Tax-efficient Investment Planning", path: "/tax" },
+      { label: "Mutual Funds & Stock Analysis", path: "/mutual" },
+      { label: "Insurance Planning", path: "/insurance" },
+      { label: "Diversified Portfolio Construction", path: "/portfolio" },
     ],
   },
   {
@@ -211,7 +211,7 @@ const MobileMenu = ({ isOpen }) => {
     <div className={`fixed inset-x-0 top-[80px] bg-[#1F2933] text-white z-50 transition-all duration-500 ease-in-out md:hidden ${
       isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
     }`}>
-      <div className="px-8 py-4 space-y-6">
+      <div className="px-8 py-4 space-y-6 max-h-[calc(100vh-80px)] overflow-y-auto">
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <div className="space-y-2">
@@ -336,7 +336,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div ref={navbarRef} className="fixed top-0 left-0 right-0 z-[1000]">
+    <div ref={navbarRef} className="md:fixed md:top-0 md:left-0 md:right-0 md:z-[1000] relative">
       <div className="flex items-center justify-between bg-[#1F2933] px-4 md:px-8 py-4 text-white">
         <div className="flex items-center gap-4 md:gap-10">
           <Link to="/">
