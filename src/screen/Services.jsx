@@ -43,7 +43,7 @@ const Services = () => {
             Our Services
           </h1>
           <p className="text-lg md:text-xl text-[#4B5563] leading-relaxed mb-8">
-            At ASKCA, we provide end-to-end financial and advisory solutions
+            At ASK<span className="text-[#F49426]">CA</span>, we provide end-to-end financial and advisory solutions
             tailored for individuals, startups, and corporates. Explore our
             services to see how we can help your business grow, stay compliant,
             and achieve long-term financial success.
@@ -140,7 +140,7 @@ const Services = () => {
             <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
           </h2>
           <p className="text-[#182729] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
-            At ASKCA, we combine technical expertise with strategic insight to
+            At ASK<span className="text-[#F49426]">CA</span>, we combine technical expertise with strategic insight to
             deliver solutions that are compliant, efficient, and tailored to
             your business objectives.
           </p>
