@@ -89,7 +89,7 @@ const DirectTax = () => {
       <section className="px-6 md:px-12 py-16 bg-[#FFF9C4]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-extrabold text-[#101010] mb-10">
-            Why ASKCA for Direct Tax?
+            Why ASK<span className="text-[#F49426]">CA</span> for Direct Tax?
             <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded"></span>
           </h2>
 
