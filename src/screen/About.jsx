@@ -28,7 +28,7 @@ const About = () => {
           {/* Text */}
           <div className="space-y-6">
             <p className="text-slate-700 leading-relaxed text-base md:text-lg">
-              ASKCA delivers advisory and compliance solutions across Financial
+              ASK<span className="text-[#F49426]">CA</span> delivers advisory and compliance solutions across Financial
               Planning, Accounting, Direct and Indirect Taxation, International
               Taxation, Secretarial Services, and Management Consulting.
             </p>
