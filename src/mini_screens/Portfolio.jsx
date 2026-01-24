@@ -1,4 +1,3 @@
-import React from "react";
 import { CheckCircle } from "lucide-react";
 
 const PortfolioConsultancy = () => {
@@ -39,7 +38,7 @@ const PortfolioConsultancy = () => {
 
           <p className="text-[#182729] leading-relaxed mb-8">
             A well-constructed portfolio is the foundation of sustainable wealth
-            creation. At ASKCA, portfolio consultancy is built on structured
+            creation. At ASK<span className="text-[#F49426]">CA</span>, portfolio consultancy is built on structured
             asset allocation, disciplined execution, and continuous review.
           </p>
 
@@ -68,7 +67,7 @@ const PortfolioConsultancy = () => {
   </h3>
 
   <p className="text-[#182729] leading-relaxed mb-6">
-    Our role goes far beyond recommending financial products. At ASKCA, we act
+    Our role goes far beyond recommending financial products. At ASK<span className="text-[#F49426]">CA</span>, we act
     as long-term strategic partners, helping clients navigate complex financial
     decisions with clarity, discipline, and confidence.
   </p>
@@ -135,7 +134,7 @@ const PortfolioConsultancy = () => {
             Build a Portfolio Designed for the Long Term
           </h2>
           <p className="text-[#182729] text-lg mb-8 leading-relaxed">
-            Partner with ASKCA to create a disciplined, diversified, and
+            Partner with ASK<span className="text-[#F49426]">CA</span> to create a disciplined, diversified, and
             goal-oriented investment portfolio.
           </p>
           <a
