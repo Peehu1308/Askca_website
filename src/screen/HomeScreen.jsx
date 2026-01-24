@@ -119,7 +119,7 @@ const HomeScreen = () => {
         ASK<span className="text-[#F49426]">CA</span> is a comprehensive financial consultancy firm founded by seasoned Chartered Accountants with deep expertise across Financial Planning, Accounting, Direct and Indirect Taxation, International Taxation, Secretarial Services, and Management Consulting.
       </p>
       <p className="text-[#182729] text-lg md:text-xl leading-relaxed">
-        With a strong presence in the Delhi-NCR region, ASKCA delivers tailored financial solutions to individuals, partnership firms, startups, and corporates.
+        With a strong presence in the Delhi-NCR region, ASK<span className="text-[#F49426]">CA</span> delivers tailored financial solutions to individuals, partnership firms, startups, and corporates.
       </p>
       <p className="text-[#182729] text-lg md:text-xl leading-relaxed">
         Whether it’s virtual CFO services, compliance management, tax advisory, or funding strategies, we provide disciplined, timely, and integrity-driven support aligned with your business goals.
@@ -165,7 +165,7 @@ profile={about}/>
       {/* WHY US SECTION */}
       {/* <section className="px-12 py-16 bg-[#FFF9C4]">
         <h2 className="text-3xl font-bold text-[#101010] mb-10">
-          Why Choose ASKCA
+          Why Choose ASK<span className="text-[#F49426]">CA</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
