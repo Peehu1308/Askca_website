@@ -1,4 +1,3 @@
-import React from "react";
 import { CheckCircle } from "lucide-react";
 
 const WealthAdvisory = () => {
@@ -37,7 +36,7 @@ const WealthAdvisory = () => {
           </h2>
 
           <p className="text-[#182729] leading-relaxed mb-8">
-            At ASKCA, wealth advisory goes beyond product selection.
+            At ASK<span className="text-[#F49426]">CA</span>, wealth advisory goes beyond product selection.
             We integrate investments, taxation, risk management, and
             long-term planning into a single, coordinated financial strategy.
           </p>
@@ -88,7 +87,7 @@ const WealthAdvisory = () => {
             Plan, Protect, and Grow Your Wealth with Confidence
           </h2>
           <p className="text-[#182729] text-lg mb-8 leading-relaxed">
-            Speak with ASKCA’s advisory team to build a structured,
+            Speak with ASK<span className="text-[#F49426]">CA</span>’s advisory team to build a structured,
             compliant, and long-term wealth strategy.
           </p>
           <a
