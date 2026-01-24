@@ -1,10 +1,9 @@
-import React from "react";
 import {
-  Layers,
-  Briefcase,
-  ShieldCheck,
-  Users,
-  TrendingUp,
+    Briefcase,
+    Layers,
+    ShieldCheck,
+    TrendingUp,
+    Users,
 } from "lucide-react";
 
 const features = [
@@ -51,7 +50,7 @@ const WhyUs = () => {
             Why ASK<span className="text-[#F49426]">CA</span>
           </h1>
           <p className="text-lg md:text-xl text-[#182729] leading-relaxed">
-            ASKCA is a Chartered Accountant–led financial consulting firm
+            ASK<span className="text-[#F49426]">CA</span> is a Chartered Accountant–led financial consulting firm
             delivering structured, compliant, and outcome-driven advisory
             services to individuals, startups, and corporates.
           </p>
@@ -126,7 +125,7 @@ const WhyUs = () => {
           Engage with a Trusted Advisory Partner
         </h2>
         <p className="text-[#182729] max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
-          Speak with ASKCA to understand how structured advisory and
+          Speak with ASK<span className="text-[#F49426]">CA</span> to understand how structured advisory and
           disciplined compliance can support your business and financial goals.
         </p>
         <a
