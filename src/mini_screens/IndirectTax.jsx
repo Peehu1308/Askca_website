@@ -1,7 +1,5 @@
-import React from "react";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import { User2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const IndirectTax = () => {
   return (
@@ -66,7 +64,7 @@ const IndirectTax = () => {
         </div>
       </section>
 
-      {/* WHY ASKCA */}
+      {/* WHY ASK<span className="text-[#F49426]">CA</span> */}
       <section className="px-6 md:px-12 py-16 bg-[#FFF9C4]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-extrabold text-[#101010] mb-10">
