@@ -6,6 +6,9 @@ import { Faq_section } from "../components/Faq_section";
 import Team_box from "../components/Team_box";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import building from "../assets/building.jpg";
+import files from "../assets/files.jpg";
+import market from "../assets/market.jpg";
 
 const HomeScreen = () => {
   return (
@@ -67,9 +70,9 @@ const HomeScreen = () => {
     {/* RIGHT IMAGE */}
     <div className="flex-1">
       <img
-        src={about}
+        src={building}
         alt="About ASKCA"
-        className="h-[60vh] w-full object-cover rounded-3xl shadow-xl"
+        className="h-[70vh] w-full object-left-top md:object-fit rounded-3xl shadow-xl"
       />
     </div>
   </div>
@@ -126,7 +129,7 @@ const HomeScreen = () => {
     {/* Image */}
     <div className="md:w-1/2">
       <img
-        src={about}
+        src={market}
         alt="About ASKCA"
         className="h-[50vh] w-full object-cover rounded-2xl shadow-2xl"
       />
