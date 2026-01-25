@@ -1,8 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Footer from "../components/Footer";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
+  const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+  const recieveremail=import.meta.env.VITE_RECIEVER_EMAIL;
+
+  const [form,setform]=useState({
+    name:"",
+    email:"",
+    phone:"",
+    message:"",
+  });
+
+  const [loading,setloading]=useState(false);
+  const [status,setstatus]=useState("");
+
+
+  const handleChange = (e) => {
+  setform({ ...form, [e.target.name]: e.target.value });
+};
+
+  const handleSubmit=async(e)=>{
+    e.preventDefault();
+    setloading(true);
+    setstatus("");
+
+    try{
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          to_email:recieveremail,
+
+          from_name:form.name,
+          from_email:form.email,
+          phone:form.phone,
+          message:form.message,
+          
+
+        },
+        publicKey
+      );
+
+      setstatus("Message Sent");
+      setform({
+        name:"",
+        email:"",
+        phone:"",
+        message:"",
+      });
+    }
+    catch(error){
+      console.error(error);
+      setstatus("Message not send.Try again later.");
+    }
+    setloading(false);
+  }
+
   return (
     <div>
       <div className="w-full bg-white px-6 md:px-16 py-16">
@@ -65,35 +124,64 @@ const Contact = () => {
         </div>
 
         {/* Right Section - Contact Form */}
-        <div className="border rounded-xl p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-6 text-[#101010]">
-            Send Us a Message
-          </h2>
+        <div className="border rounded-xl p-8 shadow-sm max-w-xl mx-auto">
+      <h2 className="text-2xl font-semibold mb-6 text-[#101010]">
+        Send Us a Message
+      </h2>
 
-          <form className="space-y-5">
-            <Input label="Full Name" placeholder="Enter your name" />
-            <Input label="Email Address" placeholder="Enter your email" />
-            <Input label="Phone Number" placeholder="Enter your phone number" />
+      <form className="space-y-5" onSubmit={handleSubmit}>
+        <input
+          name="name"
+          placeholder="Full Name"
+          value={form.name}
+          onChange={handleChange}
+          className="w-full border rounded-md px-4 py-2"
+          required
+        />
 
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Message
-              </label>
-              <textarea
-                rows="4"
-                placeholder="Write your message..."
-                className="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F49426]"
-              />
-            </div>
+        <input
+          name="email"
+          placeholder="Email Address"
+          value={form.email}
+          onChange={handleChange}
+          className="w-full border rounded-md px-4 py-2"
+          required
+        />
 
-            <button
-              type="submit"
-              className="bg-[#F49426] text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 transition w-full"
-            >
-              Submit Message
-            </button>
-          </form>
-        </div>
+        <input
+          name="phone"
+          placeholder="Phone Number"
+          value={form.phone}
+          onChange={handleChange}
+          className="w-full border rounded-md px-4 py-2"
+        />
+
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Write your message..."
+          value={form.message}
+          onChange={handleChange}
+          className="w-full border rounded-md px-4 py-2"
+          required
+        />
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="bg-[#F49426] text-white px-6 py-3 rounded-md
+                     font-semibold w-full hover:opacity-90 transition"
+        >
+          {loading ? "Sending..." : "Submit Message"}
+        </button>
+      </form>
+
+      {status && (
+        <p className="mt-4 text-sm text-center">
+          {status}
+        </p>
+      )}
+    </div>
       </div>
       
     </div>
