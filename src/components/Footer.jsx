@@ -34,16 +34,16 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-300">
             
             <li>
-                <Link to="/services/direct-tax" className="hover:text-[#F49426]">Direct Tax Advisory</Link>
+                <Link to="/coporate" className="hover:text-[#F49426]">Corporate Finance</Link>
             </li>
             <li>
-                <Link to="/services/indirect-tax" className="hover:text-[#F49426]">Indirect Tax (GST)</Link>
+                <Link to="/investment" className="hover:text-[#F49426]">Investment Services</Link>
             </li>
             <li>
-                <Link to="/services/business-advisory" className="hover:text-[#F49426]">Business Advisory</Link>
+                <Link to="/trading" className="hover:text-[#F49426]">Trading Advisory</Link>
             </li>
             <li>
-                <Link to="/services/otherservices" className="hover:text-[#F49426]">Regulatory Compliance</Link>
+                <Link to="/services/otherservices" className="hover:text-[#F49426]">Other Services</Link>
             </li>
             {/* <a
   href="https://wa.me/8130414919?text=Hello%20I%20would%20like%20to%20consult%20ASK<span className="text-[#F49426]">CA</span>"
