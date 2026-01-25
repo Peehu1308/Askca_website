@@ -69,88 +69,20 @@ const CorporateFinance = () => {
         </div>
       </section>
 
-      {/* TRADING ADVISORY */}
-      <section className="bg-white border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14">
-          <div>
-            <h2 className="text-3xl font-semibold mb-4">
-              Trading Advisory
-            </h2>
-            <p className="text-[#182729] leading-relaxed mb-6">
-              We support clients engaged in trading activities through analytical,
-              risk-aware, and process-driven advisory services. Our focus is on
-              discipline and risk management rather than speculative outcomes.
-            </p>
+      
 
-            <ul className="space-y-3 text-[#182729]">
-              <li>• Trading process and risk framework advisory</li>
-              <li>• Market analysis and strategy support</li>
-              <li>• Review of trading performance and internal controls</li>
-            </ul>
-          </div>
 
-          <div className="bg-[#F9FAFB] border border-gray-100 rounded-2xl p-8">
-            <h4 className="text-xl font-semibold mb-3">Client Value</h4>
-            <p className="text-[#182729] leading-relaxed">
-              Improved trading discipline, enhanced risk awareness, and
-              structured decision-making supported by governance and controls.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ALLIED SERVICES */}
-      <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14">
-        <div>
-          <h2 className="text-3xl font-semibold mb-4">
-            Allied Professional Services
-          </h2>
-          <p className="text-[#182729] leading-relaxed mb-6">
-            Our allied services complement our advisory offerings and provide
-            integrated regulatory, accounting, and compliance support.
-          </p>
-
-          <ul className="space-y-3 text-[#182729]">
-            <li>• Direct tax advisory and compliance</li>
-            <li>• GST advisory and regulatory compliance</li>
-            <li>• Accounting, bookkeeping, and MIS</li>
-            <li>• Secretarial and regulatory services</li>
-          </ul>
-        </div>
-
-        <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
-          <h4 className="text-xl font-semibold mb-3">Client Value</h4>
-          <p className="text-[#182729] leading-relaxed">
-            Single-window access to integrated professional services with strong
-            compliance discipline and coordinated execution.
-          </p>
-        </div>
-      </section>
-
-      {/* INVESTMENT ADVISORY */}
       <section className="bg-[#FFF9C4]">
         <div className="max-w-7xl mx-auto px-6 py-20">
           <h2 className="text-3xl font-semibold mb-4">
-            Investment & Financial Planning Advisory
+            Client value
           </h2>
 
           <p className="text-[#182729] leading-relaxed mb-8 max-w-4xl">
-            We assist individuals and families with structured investment-related
-            advisory and comprehensive financial planning focused on long-term
-            objectives and disciplined execution.
+            Improved trading discipline, risk awareness and structured decision-making.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-4 text-[#182729] mb-6">
-            <p>• Goal-based financial planning</p>
-            <p>• Asset allocation and portfolio review</p>
-            <p>• Retirement and succession planning</p>
-            <p>• Cash flow and net-worth analysis</p>
-          </div>
-
-          <p className="text-[#182729] font-medium">
-            Client Value: Clear financial direction and alignment of investments
-            with long-term life and business goals.
-          </p>
+          
         </div>
       </section>
 
