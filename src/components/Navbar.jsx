@@ -31,7 +31,7 @@ const services = [
   },
   {
     name: "Trading Advisory",
-    path: "/services/trading-advisory",
+    path: "/trading",
     other: [
       { label: "Equity Trading", path: "/services/equity-trading" },
       { label: "Derivatives Advisory", path: "/services/derivatives" },
