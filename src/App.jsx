@@ -25,6 +25,7 @@ import IndirectTax from "./mini_screens/IndirectTax";
 import BusinessAdvisory from "./mini_screens/Buisness";
 import OtherServices from "./mini_screens/OtherServices";
 import Trading from "./mini_screens/trading";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
