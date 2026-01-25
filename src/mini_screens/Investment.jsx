@@ -52,7 +52,7 @@ const InvestmentServices = () => {
     <div className="w-full bg-gradient-to-b from-[#F9FAFB] via-white to-[#F9FAFB]">
 
       {/* HERO SECTION */}
-      <section className="px-6 md:px-12 py-24 bg-gradient-to-br from-[#F5F5F5] to-[#ECEFF1] text-center">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6">
           Investment Services
         </h1>
@@ -68,12 +68,13 @@ const InvestmentServices = () => {
           <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {investmentServices.map((service, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300
-                         p-8 flex flex-col items-center text-center hover:-translate-y-2"
+                         p-8 flex flex-col items-center text-center hover:-translate-y-2
+                         w-full sm:w-[45%] lg:w-[30%] max-w-sm"
             >
               <div className="mb-5 w-14 h-14 flex items-center justify-center rounded-xl bg-orange-50">
                 {service.icon}
@@ -86,8 +87,8 @@ const InvestmentServices = () => {
       </section>
 
       {/* APPROACH / FEATURES */}
-      <section className="px-6 md:px-12 py-20 bg-[#FFF9C4]">
-        <div className="max-w-7xl mx-auto text-center">
+      <section className="px-6 md:px-12 py-20 bg-[#FFF9C4] text-center">
+        <div className="max-w-7xl mx-auto text-center bg-[#FFF9C4]">
           <h2 className="text-4xl font-extrabold text-[#101010] mb-10">
             Our Approach
             <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
