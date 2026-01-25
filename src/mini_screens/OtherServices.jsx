@@ -35,7 +35,7 @@ const OtherServices = () => {
     <div className="w-full min-h-screen bg-[#FFFFFF]">
 
       {/* HERO SECTION */}
-      <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto text-center">
+      <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto text-center bg-[#FFF9C4]">
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6">
           Other Services
         </h1>
