@@ -24,6 +24,7 @@ import DirectTax from "./mini_screens/DirectTax";
 import IndirectTax from "./mini_screens/IndirectTax";
 import BusinessAdvisory from "./mini_screens/Buisness";
 import OtherServices from "./mini_screens/OtherServices";
+import Trading from "./mini_screens/trading";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/insurance" element={<InsurancePlanning />} />
 
             <Route path="/contact" element={<Contact />} />
+            <Route path="/trading" element={<Trading/>} />
 
             <Route path="/services/direct-tax" element={<DirectTax />} />
             <Route path="/services/indirect-tax" element={<IndirectTax />} />
