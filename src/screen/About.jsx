@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer";
 import aboutImg from "../assets/about.jpeg";
+import laptop from "../assets/laptop.jpg"
+import blackimg from "../assets/black.jpg"
 
 const About = () => {
   return (
@@ -51,7 +53,7 @@ const About = () => {
           {/* Image */}
           <div className="rounded-2xl overflow-hidden shadow-sm">
             <img
-              src={aboutImg}
+              src={laptop}
               alt="ASKCA Financial Consultancy"
               className="w-full h-[420px] object-cover"
             />
@@ -111,7 +113,7 @@ const About = () => {
 
           <div className="rounded-2xl overflow-hidden shadow-sm">
             <img
-              src={aboutImg}
+              src={blackimg}
               alt="ASKCA Consulting Approach"
               className="w-full h-[420px] object-cover"
             />
