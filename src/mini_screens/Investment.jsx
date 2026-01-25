@@ -86,7 +86,7 @@ const InvestmentServices = () => {
       </section>
 
       {/* APPROACH / FEATURES */}
-      <section className="px-6 md:px-12 py-20 bg-gradient-to-br from-[#FFF7E6] to-[#FFFDF5]">
+      <section className="px-6 md:px-12 py-20 bg-[#FFF9C4]">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-[#101010] mb-10">
             Our Approach
