@@ -45,7 +45,7 @@ const Services = () => {
       {/* HERO SECTION */}
       <section className="px-6 md:px-12 py-24 bg-gradient-to-br from-[#F5F5F5] to-[#ECEFF1]">
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center bg-[#FFF9C4]">
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6">
             Our Services
           </h1>
