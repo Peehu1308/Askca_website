@@ -30,11 +30,11 @@ const CorporateFinance = () => {
 
       {/* HERO */}
       <section className="px-6 md:px-12 py-24 bg-[#FFF9C4]">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-semibold mb-6">
             Corporate <span className="text-[#F49426]">Finance</span>
           </h1>
-          <p className="text-lg text-[#182729] leading-relaxed max-w-4xl">
+          <p className="text-lg text-[#182729] leading-relaxed mx-auto">
             We provide corporate finance advisory to businesses, startups, and promoters
             across key strategic and financial decisions, with a focus on clarity,
             governance, and long-term value creation.
@@ -72,13 +72,13 @@ const CorporateFinance = () => {
       
 
 
-      <section className="bg-[#FFF9C4]">
+      <section className="bg-[#FFF9C4] text-center">
         <div className="max-w-7xl mx-auto px-6 py-20">
           <h2 className="text-3xl font-semibold mb-4">
             Client value
           </h2>
 
-          <p className="text-[#182729] leading-relaxed mb-8 max-w-4xl">
+          <p className="text-[#182729] leading-relaxed mb-8 ">
             Improved trading discipline, risk awareness and structured decision-making.
           </p>
 
