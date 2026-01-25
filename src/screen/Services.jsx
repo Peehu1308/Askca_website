@@ -9,6 +9,7 @@ import {
   BarChart3,
   TrendingUp,
   ShieldCheck,
+  HelpingHandIcon,
 } from "lucide-react";
 
 const servicesData = [
@@ -28,7 +29,13 @@ const servicesData = [
     title: "Trading Advisory",
     desc: "Expert guidance on equity and derivatives trading with data-driven insights, risk management, and disciplined market strategies.",
     icon: <BarChart3 size={32} className="text-[#F49426]" />,
-    path: "/services/trading-advisory",
+    path: "/trading",
+  },
+  {
+    title: "Other Services",
+    desc: "Our allied professional services complement our core advisory offerings and provide comprehensive support to individuals and businesses.",
+    icon: <HelpingHandIcon size={32} className="text-[#F49426]" />,
+    path: "/services/otherservices",
   },
 ];
 
@@ -113,7 +120,7 @@ const Services = () => {
           <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10">
           {servicesData.map((service, idx) => (
             <a
               href={service.path}
