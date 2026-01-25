@@ -65,7 +65,7 @@ const IndirectTax = () => {
       </section>
 
       {/* WHY ASK<span className="text-[#F49426]">CA</span> */}
-      <section className="px-6 md:px-12 py-16 bg-[#FFF9C4]">
+      <section className="px-6 md:px-12 py-16 bg-[#FFF9C4] text-center">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-extrabold text-[#101010] mb-10">
             Why ASK<span className="text-[#F49426]">CA</span> for GST?
