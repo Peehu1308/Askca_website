@@ -12,7 +12,7 @@ const PortfolioConsultancy = () => {
     <div className="w-full bg-[#F9FAFB] text-[#101010]">
 
       {/* HERO */}
-      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4]">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] text-center">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-5xl font-semibold mb-6">
             Portfolio <span className="text-[#F49426]">Consultancy</span>
