@@ -1,7 +1,7 @@
 import React from "react";
 import about from "../assets/about.jpeg";
 import Services_box from "../components/Services_box";
-import {User2} from "lucide-react";
+import {Landmark, Layers2, LineChart, TrendingUp, User2} from "lucide-react";
 import { Faq_section } from "../components/Faq_section";
 import Team_box from "../components/Team_box";
 import Footer from "../components/Footer";
@@ -11,54 +11,70 @@ const HomeScreen = () => {
   return (
     <div className="w-full min-h-screen bg-[#FFFFFF]">
 
-      <section className="px-12 py-16 flex flex-col md:flex-row items-center gap-12">
-  <div className="flex-1">
-    <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6 leading-tight">
-      ASK<span className="text-[#F49426]">CA</span>
-    </h1>
+     <section className="px-6 md:px-12 py-20 bg-[#F9FAFB]">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+    
+    {/* LEFT CONTENT */}
+    <div className="flex-1">
+      <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6 leading-tight">
+        ASK<span className="text-[#F49426]">CA</span>
+      </h1>
 
-    <p className="text-lg md:text-xl text-[#182729] leading-relaxed max-w-xl mb-8">
-      A comprehensive financial consultancy firm founded by seasoned Chartered Accountants, delivering trusted, compliant, and growth-focused financial solutions.
-    </p>
+      <p className="text-lg md:text-xl text-[#475569] leading-relaxed max-w-xl mb-10">
+        A comprehensive financial consultancy firm founded by seasoned Chartered
+        Accountants, delivering trusted, compliant, and growth-focused financial
+        solutions.
+      </p>
 
-    <div className="grid md:grid-cols-3 gap-6 mb-6">
-      {/* Cards */}
-      <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-        <h3 className="font-semibold text-[#F49426] mb-3 text-lg">Expert Advisory</h3>
-        <p className="text-[#101010] text-sm md:text-base leading-relaxed">
-          Decades of experience across taxation, compliance, and strategic financial planning.
-        </p>
+      {/* HIGHLIGHT CARDS */}
+      <div className="grid gap-8 md:grid-cols-3 mb-12">
+        <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition">
+          <h3 className="font-semibold text-[#F49426] mb-2 text-lg">
+            Expert Advisory
+          </h3>
+          <p className="text-[#334155] text-sm leading-6">
+            Deep expertise across taxation, compliance, and strategic financial planning.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition">
+          <h3 className="font-semibold text-[#F49426] mb-2 text-lg">
+            Integrity & Compliance
+          </h3>
+          <p className="text-[#334155] text-sm leading-6">
+            Ethical, transparent, and regulation-driven advisory you can rely on.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition">
+          <h3 className="font-semibold text-[#F49426] mb-2 text-lg">
+            Growth-Focused Strategy
+          </h3>
+          <p className="text-[#334155] text-sm leading-6">
+            Financial decisions aligned with long-term business growth.
+          </p>
+        </div>
       </div>
 
-      <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-        <h3 className="font-semibold text-[#F49426] mb-3 text-lg">Integrity & Compliance</h3>
-        <p className="text-[#101010] text-sm md:text-base leading-relaxed">
-          Ethical, transparent, and regulation-driven solutions you can trust.
-        </p>
-      </div>
-
-      <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-        <h3 className="text-[#F49426] font-semibold mb-3 text-lg">Growth-Focused Strategy</h3>
-        <p className="text-[#101010] text-sm md:text-base leading-relaxed">
-          We align financial decisions with your long-term business growth.
-        </p>
-      </div>
+      <Link
+        to="/about"
+        className="inline-block bg-[#F49426] text-white px-10 py-4 rounded-lg font-semibold hover:bg-orange-600 transition shadow-md hover:shadow-lg"
+      >
+        Know More
+      </Link>
     </div>
 
-    <Link className="bg-[#F49426] text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition mt-4 shadow-md hover:shadow-lg"
-    to="/about">
-      Know More
-    </Link>
-  </div>
-
-  <div className="flex-1">
-    <img
-      src={about}
-      alt="About ASKCA"
-      className="h-[70vh] w-full object-cover rounded-2xl shadow-2xl"
-    />
+    {/* RIGHT IMAGE */}
+    <div className="flex-1">
+      <img
+        src={about}
+        alt="About ASKCA"
+        className="h-[60vh] w-full object-cover rounded-3xl shadow-xl"
+      />
+    </div>
   </div>
 </section>
+
 
       <section className="px-6 md:px-12 py-16 bg-[#FFFFFF]">
         {/* <p className="flex text-3xl font-bold text-[#101010] mb-10 justify-center">Experience Excellence with Our Services</p> */}
@@ -68,29 +84,32 @@ const HomeScreen = () => {
   </h2>
         <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-6 px-5'>
   <Services_box
-    title="Direct Tax"
-    content="Direct tax services including income computation, tax return filing, TDS and advance tax compliance, and strategic tax planning."
-    icon={<User2 size={36} className="text-[#F49426]" />}
-    link="/"
-  />
-  <Services_box
-    title="Indirect Tax"
-    content="Services covering GST registration, returns, compliance, refund claims, and advisory on indirect taxation matters."
-    icon={<User2 size={36} className="text-[#F49426]" />}
-    link="/"
-  />
-  <Services_box
-    title="Business Advisory Services"
-    content="Advisory on business structuring, financial modeling, mergers & acquisitions, and fund-raising strategies."
-    icon={<User2 size={36} className="text-[#F49426]" />}
-    link="/"
-  />
-  <Services_box
-    title="Other Services"
-    content="Support for company/LLP formation, MSME/startup registration, SEBI/RBI compliance, and statutory certifications."
-    icon={<User2 size={36} className="text-[#F49426]" />}
-    link="/"
-  />
+  title="Corporate Finance"
+  content="Advisory on capital structuring, financial modeling, mergers and acquisitions, fund-raising strategies, and long-term financial planning to support business growth."
+  icon={<Landmark size={36} className="text-[#F49426]" />}
+  link="/coporate"
+/>
+
+<Services_box
+  title="Investment Services"
+  content="Strategic investment advisory including portfolio assessment, risk-return analysis, market opportunities evaluation, and guidance aligned with client financial goals."
+  icon={<TrendingUp size={36} className="text-[#F49426]" />}
+  link="/investment"
+/>
+
+<Services_box
+  title="Trading Advisory"
+  content="Advisory on trading processes, market analysis, risk management frameworks, and performance review to support disciplined and informed trading decisions."
+  icon={<LineChart size={36} className="text-[#F49426]" />}
+  link="/trading"
+/>
+
+<Services_box
+  title="Other Services"
+  content="Support for company and LLP formation, MSME and startup registrations, regulatory compliance (SEBI/RBI), and statutory and certification-related services."
+  icon={<Layers2 size={36} className="text-[#F49426]" />}
+  link="/services/otherservices"
+/>
 </div>
 
       </section>
@@ -109,7 +128,7 @@ const HomeScreen = () => {
       <img
         src={about}
         alt="About ASKCA"
-        className="h-auto w-full object-cover rounded-2xl shadow-2xl"
+        className="h-[50vh] w-full object-cover rounded-2xl shadow-2xl"
       />
     </div>
 
