@@ -57,37 +57,43 @@ const WhyUs = () => {
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mb-14">
-          Our Differentiators
-          <span className="block w-24 h-1 bg-[#F49426] mt-4 mx-auto rounded"></span>
-        </h2>
+      <section className="px-6 md:px-12 py-20">
+  {/* SECTION HEADING */}
+  <h2 className="text-4xl font-extrabold text-center mb-14">
+    Our Differentiators
+    <span className="block w-24 h-1 bg-[#F49426] mt-4 mx-auto rounded"></span>
+  </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {features.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white border border-gray-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition"
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 rounded-lg bg-[#FFF3E0]">
-                    <Icon size={26} className="text-[#F49426]" />
-                  </div>
-                  <h3 className="text-lg font-semibold leading-snug">
-                    {item.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-[#182729] leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            );
-          })}
+  {/* GRID CONTAINER */}
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-10">
+  {features.map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <div
+        key={index}
+        className="bg-white border border-gray-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition
+                   w-full sm:w-[45%] lg:w-[30%] max-w-sm"
+      >
+        <div className="flex items-start gap-4 mb-4">
+          <div className="p-3 rounded-lg bg-[#FFF3E0]">
+            <Icon size={26} className="text-[#F49426]" />
+          </div>
+          <h3 className="text-lg font-semibold leading-snug">
+            {item.title}
+          </h3>
         </div>
-      </section>
+        <p className="text-sm text-[#182729] leading-relaxed">
+          {item.desc}
+        </p>
+      </div>
+    );
+  })}
+</div>
+
+  </div>
+</section>
+
 
       {/* TRUST STRIP */}
       <section className="px-6 md:px-12 py-16 bg-[#FFF9C4]">
