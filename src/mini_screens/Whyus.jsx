@@ -44,13 +44,13 @@ const WhyUs = () => {
     <div className="w-full bg-[#F9FAFB] text-[#101010]">
 
       {/* HERO */}
-      <section className="px-6 md:px-12 py-24 bg-[#F5F5F5] text-center border-b border-gray-200">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] text-center border-b border-gray-200">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
             Why ASK<span className="text-[#F49426]">CA</span>
           </h1>
           <p className="text-lg md:text-xl text-[#182729] leading-relaxed">
-            ASK<span className="text-[#F49426]">CA</span> is a Chartered Accountant–led financial consulting firm
+           <span className="font-bold"> ASK<span className="text-[#F49426]">CA</span></span> is a Chartered Accountant–led financial consulting firm
             delivering structured, compliant, and outcome-driven advisory
             services to individuals, startups, and corporates.
           </p>
