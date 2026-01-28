@@ -15,7 +15,7 @@ const About = () => {
             About ASK<span className="text-[#F49426]">CA</span>
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            ASK<span className="text-[#F49426]">CA</span> is a comprehensive financial consultancy firm founded by
+            <span className="font-bold">ASK<span className="text-[#F49426]">CA</span></span> is a comprehensive financial consultancy firm founded by
             seasoned Chartered Accountants, delivering high-quality advisory
             and compliance solutions across financial, tax, regulatory, and
             management domains.
@@ -24,13 +24,13 @@ const About = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 py-20">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-20 inset-y-0">
         <div className="grid md:grid-cols-2 gap-16 items-start">
 
           {/* Text */}
           <div className="space-y-6">
             <p className="text-slate-700 leading-relaxed text-base md:text-lg">
-              ASK<span className="text-[#F49426]">CA</span> delivers advisory and compliance solutions across Financial
+               <span className="font-bold">ASK<span className="text-[#F49426]">CA</span></span> delivers advisory and compliance solutions across Financial
               Planning, Accounting, Direct and Indirect Taxation, International
               Taxation, Secretarial Services, and Management Consulting.
             </p>
@@ -68,9 +68,10 @@ const About = () => {
 
           {/* Purpose */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-3xl font-bold mb-4">
               Our Purpose
             </h3>
+            <span className="block w-20 h-1  bg-[#F49426] mb-6 rounded-md"></span>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg">
               To enable individuals and businesses to make informed financial
               decisions by delivering disciplined, transparent, and
@@ -80,9 +81,10 @@ const About = () => {
 
           {/* Values */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-3xl font-bold mb-4">
               Our Values
             </h3>
+            <span className="block w-20 h-1  bg-[#F49426] mb-6 rounded-md"></span>
             <ul className="space-y-3 text-slate-700 text-base">
               <li><strong>Integrity</strong> — Upholding the highest professional and ethical standards</li>
               <li><strong>Independence</strong> — Objective, conflict-free advice</li>
@@ -99,9 +101,10 @@ const About = () => {
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-24">
 
         <div className="mb-12 max-w-3xl">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             Our Approach
           </h2>
+          <span className="block w-20 h-1  bg-[#F49426] mb-6 rounded-md"></span>
           <p className="text-slate-600 leading-relaxed">
             Our approach is structured, consultative, and client-centric.
             We partner closely with clients to deliver tailored solutions
