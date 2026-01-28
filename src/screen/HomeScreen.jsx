@@ -122,7 +122,7 @@ const HomeScreen = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="px-6 md:px-12 py-16 bg-[#FFFFFF]">
+      <section className="px-6 md:px-12 py-16 bg-[#FFFFFF] inset-y-0">
   {/* Heading */}
   <h2 className="text-4xl md:text-5xl font-extrabold text-center text-[#101010] mb-12 relative inline-block">
     Why Choose Us?
@@ -135,7 +135,7 @@ const HomeScreen = () => {
       <img
         src={market}
         alt="About ASKCA"
-        className="h-[50vh] w-full object-cover rounded-2xl shadow-2xl"
+        className="w-full object-cover rounded-2xl shadow-2xl"
       />
     </div>
 
