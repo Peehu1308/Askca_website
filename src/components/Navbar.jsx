@@ -359,7 +359,7 @@ const Navbar = () => {
                 onClick={toggleService}
                 className="text-lg font-bold hover:text-[#F49426] transition cursor-pointer"
               >
-                Service
+                <Link to="/services">Services</Link>
               </span>
               <ServiceMegaMenu
                 isOpen={openService}
@@ -375,7 +375,7 @@ const Navbar = () => {
                 onClick={toggleAbout}
                 className="text-lg font-bold hover:text-[#F49426] transition cursor-pointer"
               >
-                About Us
+                <Link to="/about">About Us</Link>
               </span>
               <AboutMegaMenu
                 isOpen={openAbout}
