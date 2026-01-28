@@ -27,7 +27,7 @@ const InsurancePlanning = () => {
         <h1 className="text-5xl font-semibold mb-4">
           Insurance <span className="text-[#F49426]">Planning</span>
         </h1>
-        <p className="max-w-3xl mx-auto text-lg text-gray-900">
+        <p className="max-w-3xl mx-auto text-xl text-gray-700">
           Protecting your wealth, income, and family through structured life and
           health insurance solutions.
         </p>
