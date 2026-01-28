@@ -7,7 +7,7 @@ import Team_box from "../components/Team_box";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import building from "../assets/building.jpg";
-// import files from "../assets/files.jpg";
+
 import market from "../assets/market.jpg";
 import analyst from "../assets/stockan.jpg"
 import mainimg from "../assets/mainimg.jpg"
