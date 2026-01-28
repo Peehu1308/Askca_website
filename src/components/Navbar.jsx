@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.avif";
+import logo from "../assets/logoimg.svg";
+
 
 /* =======================
    SERVICE MEGA MENU DATA
@@ -33,16 +34,16 @@ const services = [
     name: "Trading Advisory",
     path: "/trading",
     other: [
-      { label: "Equity Trading", path: "/services/equity-trading" },
-      { label: "Derivatives Advisory", path: "/services/derivatives" },
+      { label: "Trading Advisory", path: "/trading" },
+      // { label: "Derivatives Advisory", path: "/services/derivatives" },
     ],
   },
   {
     name: "Other Services",
     path: "/services/otherservices",
     other: [
-      { label: "Indirect Tax (GST)", path: "/services/indirect-tax" },
-      { label: "Business Advisory", path: "/services/business-advisory" },
+      { label: "Other Services", path: "/services/otherservices" },
+      // { label: "Business Advisory", path: "/services/business-advisory" },
     ],
   },
 ];
@@ -340,7 +341,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between bg-[#1F2933] px-4 md:px-8 py-4 text-white">
         <div className="flex items-center gap-4 md:gap-10">
           <Link to="/">
-            <img src={logo} alt="logo" className="h-12 md:h-16 w-12 md:w-16 object-contain" />
+            <img src={logo} alt="logo" className="text-white h-12 md:h-16 w-12 md:w-16 object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
@@ -398,7 +399,7 @@ const Navbar = () => {
 
         <Link
           to="/contact"
-          className="bg-[#F49426] px-3 md:px-5 py-2 md:py-2.5 rounded-md font-semibold text-sm md:text-base hover:opacity-90 transition"
+          className="hidden md:flex lg:flex bg-[#F49426] px-3 md:px-5 py-2 md:py-2.5 rounded-md font-semibold text-sm md:text-base hover:opacity-90 transition"
         >
           Book an Appointment
         </Link>
