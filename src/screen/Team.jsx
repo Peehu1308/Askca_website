@@ -12,7 +12,7 @@ const Team = () => {
           Our Founders
         </h1>
         <p className="text-[#182729] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          Meet the professionals driving ASK<span className="text-[#F49426]">CA</span> with expertise, integrity, and strategic financial insight.
+          Meet the professionals driving <span className='font-bold'>ASK<span className="text-[#F49426]">CA</span></span> with expertise, integrity, and strategic financial insight.
         </p>
       </div>
 
