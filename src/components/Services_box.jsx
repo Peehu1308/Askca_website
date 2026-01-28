@@ -7,7 +7,7 @@ const Services_box = ({icon,title,content,link}) => {
   <div className="text-[#F49426] mb-4">{icon}</div>
   <p className="text-[#101010] font-semibold text-lg mb-2">{title}</p>
   <p className="text-[#182729] text-sm leading-relaxed mb-4">{content}</p>
-  {link && <Link to={link} className="text-sm font-medium text-[#F49426] hover:underline">Know More</Link>}
+  {link && <Link to={link} className="text-sm font-medium text-[#F49426] hover:underline mt-auto">Know More</Link>}
 </div>
 
 
