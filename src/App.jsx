@@ -25,14 +25,17 @@ import IndirectTax from "./mini_screens/IndirectTax";
 import BusinessAdvisory from "./mini_screens/Buisness";
 import OtherServices from "./mini_screens/OtherServices";
 import Trading from "./mini_screens/trading";
-import { Analytics } from "@vercel/analytics/next"
+import Scrolltotop from "./Scrolltotop";
+// import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
     <div className="bg-[#F5F6F7]">
       <BrowserRouter>
+
         <Navbar />
 
+        <Scrolltotop/>
         {/* GLOBAL OFFSET FOR FIXED NAVBAR */}
         <main className="md:pt-[96px] lg:pt-[96px]">
           <Routes>
