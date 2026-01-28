@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logoimg.svg";
+import Logo from "../assets/logoimg.svg?react";
+
 
 
 /* =======================
@@ -340,9 +342,13 @@ const Navbar = () => {
     <div ref={navbarRef} className="md:fixed md:top-0 md:left-0 md:right-0 md:z-[1000] relative">
       <div className="flex items-center justify-between bg-[#1F2933] px-4 md:px-8 py-4 text-white">
         <div className="flex items-center gap-4 md:gap-10">
-          <Link to="/">
+          {/* <Link to="/">
             <img src={logo} alt="logo" className="text-white h-12 md:h-16 w-12 md:w-16 object-contain" />
-          </Link>
+          </Link> */}
+          <Link to="/">
+  <Logo className="h-12 w-12 text-white hover:text-[#F49426]" />
+</Link>
+
 
           <div className="hidden md:flex items-center gap-6">
             <div className="relative">

@@ -9,12 +9,14 @@ import { Link } from "react-router-dom";
 import building from "../assets/building.jpg";
 import files from "../assets/files.jpg";
 import market from "../assets/market.jpg";
+import analyst from "../assets/stockan.jpg"
+import mainimg from "../assets/mainimg.jpg"
 
 const HomeScreen = () => {
   return (
     <div className="w-full min-h-screen bg-[#FFFFFF]">
 
-     <section className="px-6 md:px-12 py-20 bg-[#F9FAFB]">
+     <section className="px-6 md:px-12 py-5 bg-[#F9FAFB]">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
     
     {/* LEFT CONTENT */}
@@ -70,7 +72,9 @@ const HomeScreen = () => {
     {/* RIGHT IMAGE */}
     <div className="flex-1">
       <img
-        src={building}
+        // src={building}
+        // src={analyst}
+        src={mainimg}
         alt="About ASKCA"
         className="h-[70vh] w-full object-left-top md:object-fit rounded-3xl shadow-xl"
       />
