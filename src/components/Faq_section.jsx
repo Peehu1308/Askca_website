@@ -26,17 +26,17 @@ export const Faq_section = () => {
   };
 
   return (
-    <section className="px-6 md:px-12 py-16 bg-white">
+    <section className="px-6 md:px-12 py-1 bg-white">
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}
         <div className="mb-10 text-center">
-          <h2 className="text-3xl font-extrabold text-[#101010]">
+          {/* <h2 className="text-3xl font-extrabold text-[#101010]">
             Frequently Asked Questions
           </h2>
           <p className="text-[#182729] mt-2">
             Answers to common queries about our services and engagement process.
-          </p>
+          </p> */}
         </div>
 
         {/* FAQ List */}
