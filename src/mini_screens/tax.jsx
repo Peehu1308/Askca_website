@@ -23,11 +23,11 @@ const TaxEfficientInvestments = () => {
 
   return (
     <div className="bg-[#F9FAFB] text-[#101010]">
-      <section className="px-6 md:px-12 py-24 bg-[#101010] text-white text-center">
-        <h1 className="text-5xl font-semibold mb-4">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] text-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Tax-efficient <span className="text-[#F49426]">Investments</span>
         </h1>
-        <p className="max-w-3xl mx-auto text-lg text-gray-200 leading-relaxed">
+        <p className="max-w-3xl mx-auto text-lg  leading-relaxed">
           Investment strategies designed to maximize returns by minimizing the
           impact of taxes.
         </p>

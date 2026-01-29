@@ -13,7 +13,7 @@ const WealthAdvisory = () => {
     <div className="w-full bg-[#F9FAFB] text-[#101010]">
 
       {/* HERO */}
-      <section className="px-6 md:px-12 py-24 bg-[#F5F5F5] border-b border-gray-200">
+      <section className="px-6 md:px-12 py-24 bg-[#FFF9C4] border-b border-gray-200">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
             Wealth Advisory
