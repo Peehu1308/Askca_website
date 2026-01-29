@@ -6,12 +6,12 @@ const DirectTax = () => {
     <div className="w-full min-h-screen bg-[#FFFFFF]">
 
       {/* HERO SECTION */}
-      <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto">
+      <section className="px-6 md:px-12 py-20 max-w-7xl mx-auto text-center bg-[#FFF9C4]">
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#101010] mb-6">
           Direct Tax Services
         </h1>
 
-        <p className="text-lg md:text-xl text-[#182729] leading-relaxed max-w-3xl mb-8">
+        <p className="text-lg md:text-xl text-[#182729] leading-relaxed max-w-3xl mb-8 text-center mx-auto">
           Our Direct Tax services are designed to help individuals and
           organizations manage compliance, optimize tax positions, and navigate
           complex tax regulations with clarity and confidence.
