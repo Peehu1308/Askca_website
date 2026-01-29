@@ -59,30 +59,45 @@ const BusinessAdvisory = () => {
         </div>
       </section>
 
-      {/* CASE STUDIES / EXAMPLES */}
       <section className="px-6 md:px-12 py-16 max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-[#101010] mb-10 text-center">
-          Recent Advisory Highlights
-          <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
-        </h2>
+  <h2 className="text-4xl font-extrabold text-[#101010] mb-10 text-center">
+    Our Advisory Capabilities
+    <span className="block w-28 h-1 bg-[#F49426] mt-3 rounded mx-auto"></span>
+  </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {[
-            { title: "Merger Advisory", desc: "Guided a mid-sized company through a successful merger, ensuring smooth regulatory compliance and valuation accuracy." },
-            { title: "Fund Raising Strategy", desc: "Developed strategies for raising capital with minimal tax impact and strong financial structuring." },
-            { title: "Business Restructuring", desc: "Optimized operational and tax structure for enhanced efficiency and profitability." },
-            { title: "Transaction Support", desc: "Provided due diligence and advisory for multiple cross-border transactions." },
-          ].map((item, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-              <div className="flex items-center gap-4 mb-4">
-                <User2 size={28} className="text-[#F49426]" />
-                <h3 className="text-xl font-semibold text-[#101010]">{item.title}</h3>
-              </div>
-              <p className="text-[#182729] text-sm md:text-base">{item.desc}</p>
-            </div>
-          ))}
+  <div className="grid md:grid-cols-2 gap-8">
+    {[
+      {
+        title: "Mergers & Acquisitions Advisory",
+        desc: "Advisory support across mergers, acquisitions, and business combinations, including valuation, structuring, due diligence, and regulatory coordination."
+      },
+      {
+        title: "Fundraising & Capital Advisory",
+        desc: "Strategic advisory on equity and debt fundraising, capital structuring, and investor alignment to support growth and long-term financial stability."
+      },
+      {
+        title: "Business Restructuring & Turnaround",
+        desc: "Advisory on financial and operational restructuring to improve efficiency, liquidity management, and long-term viability."
+      },
+      {
+        title: "Transaction & Deal Support",
+        desc: "End-to-end transaction advisory covering due diligence, financial analysis, documentation support, and execution oversight."
+      },
+    ].map((item, idx) => (
+      <div key={idx} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div className="flex items-center gap-4 mb-4">
+          <User2 size={28} className="text-[#F49426]" />
+          <h3 className="text-xl font-semibold text-[#101010]">
+            {item.title}
+          </h3>
         </div>
-      </section>
+        <p className="text-[#182729] text-sm md:text-base">
+          {item.desc}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* CTA */}
       <section className="px-6 md:px-12 py-20 text-center max-w-7xl mx-auto">
