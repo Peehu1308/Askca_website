@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logoimg.svg";
 import Logo from "../assets/tagline.png";
 import logoimg from "../assets/Logo_img.png"
+import { ArrowDownIcon, MoveDown } from "lucide-react";
 
 
 
@@ -208,53 +209,105 @@ const AboutMegaMenu = ({ isOpen, onMouseEnter, onMouseLeave }) => {
   );
 };
 
-/* =======================
-   MOBILE MENU
-======================= */
 const MobileMenu = ({ isOpen }) => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+
+  const [openaboutt,setopenabout]=useState(null);
+
+  const toggleAbout=(index)=>{
+    setopenabout(openaboutt===index?null:index);
+  };
   return (
-    <div className={`fixed inset-x-0 top-[80px] bg-[#1F2933] text-white z-50 transition-all duration-500 ease-in-out md:hidden ${
-      isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-    }`}>
+    <div
+      className={`fixed inset-x-0 top-[80px] bg-[#1F2933] text-white z-50 transition-all duration-500 ease-in-out md:hidden min-h-screen ${
+        isOpen
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-4 pointer-events-none"
+      }`}
+    >
       <div className="px-8 py-4 space-y-6 max-h-[calc(100vh-80px)] overflow-y-auto">
+        {/* Services */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
-          <div className="space-y-2">
+
+          <div className="space-y-3">
             {services.map((service, index) => (
               <div key={index}>
-                <Link to={service.path} className="block text-sm hover:text-[#F49426] transition">
-                  {service.name}
-                </Link>
-                <ul className="ml-4 mt-2 space-y-1 text-xs text-gray-300">
-                  {service.other.map((item, idx) => (
-                    <li key={idx}>
-                      <Link to={item.path} className="hover:text-white transition">
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                {/* Service Row */}
+                <div className="flex items-center justify-between">
+                  <Link
+                    to={service.path}
+                    className="text-sm hover:text-[#F49426] transition"
+                  >
+                    {service.name}
+                  </Link>
+
+                  <button
+                    onClick={() => toggleDropdown(index)}
+                    className="p-1"
+                  >
+                    <ArrowDownIcon
+                      className={`transition-transform h-3 ${
+                        openDropdown === index ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
+
+                {/* Dropdown */}
+                {openDropdown === index && (
+                  <ul className="ml-4 mt-2 space-y-1 text-xs text-gray-300">
+                    {service.other.map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          to={item.path}
+                          className="hover:text-white transition"
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
         </div>
+
+        {/* About Us */}
         <div>
           <h3 className="text-lg font-semibold mb-4">About Us</h3>
           <div className="space-y-2">
             {aboutData.map((item, index) => (
               <div key={index}>
-                <div className="text-sm">{item.name}</div>
-                <ul className="ml-4 mt-2 space-y-1 text-xs text-gray-300">
+                <div className="flex justify-between items-center">
+                  <div className="text-sm">{item.name}</div>
+                <button onClick={()=>toggleAbout(index)} className="p-1">
+                  <ArrowDownIcon className={`transition-transform h-3 ${
+                    openaboutt===index ?"rotate-180":""
+                  }`}/>
+
+                </button>
+                </div>
+                {openaboutt===index && (
+                  <ul className="ml-4 mt-2 space-y-1 text-xs text-gray-300">
                   {item.spotlight.map((point, idx) => (
                     <li key={idx} className="hover:text-white transition">
                       {point}
                     </li>
                   ))}
                 </ul>
+                )}
               </div>
             ))}
           </div>
         </div>
+
+        {/* Links */}
         <div className="space-y-2">
           <Link to="/why" className="block text-sm hover:text-[#F49426] transition">
             Why Us
@@ -270,6 +323,7 @@ const MobileMenu = ({ isOpen }) => {
     </div>
   );
 };
+
 
 /* =======================
    NAVBAR (CLICK LOGIC ADDED)
@@ -341,7 +395,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div ref={navbarRef} className="md:fixed md:top-0 md:left-0 md:right-0 md:z-[1000] relative">
+    <div ref={navbarRef} className="fixed top-0 left-0 right-0 z-[1000]">
       <div className="flex items-center justify-between bg-[#1F2933] px-4 md:px-8 py-4 text-white">
         <div className="flex items-center gap-4 md:gap-10">
           <Link to="/">
