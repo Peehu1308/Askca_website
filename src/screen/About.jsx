@@ -9,12 +9,12 @@ const About = () => {
     <div className="w-full bg-[#F4F6F8] text-[#0F172A]">
 
       {/* PAGE HEADER */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-20">
+      <section className="border-b border-gray-200 text-center bg-[#FFF9C4]">
+        <div className="mx-auto px-6 md:px-12 py-20">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
             About ASK<span className="text-[#F49426]">CA</span>
           </h1>
-          <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
+          <p className="text-lg text-slate-600 text-center">
             <span className="font-bold">ASK<span className="text-[#F49426]">CA</span></span> is a comprehensive financial consultancy firm founded by
             seasoned Chartered Accountants, delivering high-quality advisory
             and compliance solutions across financial, tax, regulatory, and
