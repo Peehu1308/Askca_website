@@ -8,3 +8,12 @@ body{
     /* margin: 0; */
 
 }
+:root{
+    --nav-height:80px;
+}
+
+@media(max-width:768px){
+    body{
+        padding-top: var(--nav-height);
+    }
+}
