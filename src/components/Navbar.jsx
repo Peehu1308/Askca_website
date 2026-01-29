@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logoimg.svg";
 import Logo from "../assets/tagline.png";
 import logoimg from "../assets/Logo_img.png"
-import { ArrowDownIcon, MoveDown } from "lucide-react";
+import { ArrowBigDown, ArrowBigDownDashIcon, ArrowDownIcon, MoveDown } from "lucide-react";
 
 
 
@@ -250,7 +250,7 @@ const MobileMenu = ({ isOpen }) => {
                     onClick={() => toggleDropdown(index)}
                     className="p-1"
                   >
-                    <ArrowDownIcon
+                    <ArrowBigDownDashIcon
                       className={`transition-transform h-3 ${
                         openDropdown === index ? "rotate-180" : ""
                       }`}
@@ -287,7 +287,7 @@ const MobileMenu = ({ isOpen }) => {
                 <div className="flex justify-between items-center">
                   <div className="text-sm">{item.name}</div>
                 <button onClick={()=>toggleAbout(index)} className="p-1">
-                  <ArrowDownIcon className={`transition-transform h-3 ${
+                  <ArrowBigDownDashIcon className={`transition-transform h-3 ${
                     openaboutt===index ?"rotate-180":""
                   }`}/>
 
