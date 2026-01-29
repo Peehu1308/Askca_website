@@ -16,7 +16,7 @@ const HomeScreen = () => {
   return (
     <div className="w-full min-h-screen bg-[#FFFFFF]">
 
-     <section className="px-6 md:px-12 py-5 bg-[#F9FAFB]">
+     <section className="mt-8 px-6 md:px-12 py-5 bg-[#F9FAFB]">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
     
     {/* LEFT CONTENT */}
