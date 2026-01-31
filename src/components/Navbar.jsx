@@ -26,9 +26,9 @@ const services = [
     other: [
       { label: "Portfolio Consultancy", path: "/portfolio-consultancy" },
       { label: "Wealth Advisory", path: "/wealth-advisory" },
-      { label: "Retirement Planning", path: "/retirement" },
-      { label: "Tax-efficient Investment Planning", path: "/tax" },
-      { label: "Mutual Funds & Stock Analysis", path: "/mutual" },
+      { label: "Retirement Planning", path: "/retirement-planning" },
+      { label: "Tax-efficient Investment Planning", path: "/tax-efficient-investment" },
+      { label: "Mutual Funds & Stock Analysis", path: "/mutual-fund-advisory" },
       { label: "Insurance Planning", path: "/insurance" },
       { label: "Diversified Portfolio Construction", path: "/portfolio-consultancy" },
     ],
