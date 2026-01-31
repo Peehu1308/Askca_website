@@ -1,28 +1,28 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
-import HomeScreen from "./screen/HomeScreen";
-import Team from "./screen/Team";
 import About from "./screen/About";
-import Services from "./screen/Services";
 import Contact from "./screen/Contact";
+import HomeScreen from "./screen/HomeScreen";
+import Services from "./screen/Services";
+import Team from "./screen/Team";
 
 import Coporate from "./mini_screens/Coporate";
-import Whyus from "./mini_screens/Whyus";
-import InvestmentServices from "./mini_screens/Investment";
-import PortfolioConsultancy from "./mini_screens/Portfolio";
-import WealthAdvisory from "./mini_screens/Wealth";
-import TaxEfficientInvestments from "./mini_screens/tax";
-import RetirementPlanning from "./mini_screens/retirement";
-import MutualFundAdvisory from "./mini_screens/mutual";
 import InsurancePlanning from "./mini_screens/insurance";
+import InvestmentServices from "./mini_screens/Investment";
+import MutualFundAdvisory from "./mini_screens/mutual";
+import PortfolioConsultancy from "./mini_screens/Portfolio";
+import RetirementPlanning from "./mini_screens/retirement";
+import TaxEfficientInvestments from "./mini_screens/tax";
+import WealthAdvisory from "./mini_screens/Wealth";
+import Whyus from "./mini_screens/Whyus";
 
+import BusinessAdvisory from "./mini_screens/Buisness";
 import DirectTax from "./mini_screens/DirectTax";
 import IndirectTax from "./mini_screens/IndirectTax";
-import BusinessAdvisory from "./mini_screens/Buisness";
 import OtherServices from "./mini_screens/OtherServices";
 import Trading from "./mini_screens/trading";
 import Scrolltotop from "./Scrolltotop";
@@ -40,8 +40,8 @@ function App() {
         <main className="md:pt-[96px] lg:pt-[96px]">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/our-founders" element={<Team />} />
+            <Route path="/about-us" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/coporate" element={<Coporate />} />
             <Route path="/why" element={<Whyus />} />
