@@ -97,7 +97,7 @@ const HomeScreen = () => {
   title="Investment Services"
   content="Strategic investment advisory including portfolio assessment, risk-return analysis, market opportunities evaluation, and guidance aligned with client financial goals."
   icon={<TrendingUp size={36} className="text-[#F49426]" />}
-  link="/investment"
+  link="/investment-services"
 />
 
 <Services_box

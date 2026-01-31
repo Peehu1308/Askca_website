@@ -39,7 +39,7 @@ const Footer = () => {
                 <Link to="/coporate-finance" className="hover:text-[#F49426]">Corporate Finance</Link>
             </li>
             <li>
-                <Link to="/investment" className="hover:text-[#F49426]">Investment Services</Link>
+                <Link to="/investment-services" className="hover:text-[#F49426]">Investment Services</Link>
             </li>
             <li>
                 <Link to="/trading" className="hover:text-[#F49426]">Trading Advisory</Link>

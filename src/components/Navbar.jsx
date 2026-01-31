@@ -22,15 +22,15 @@ const services = [
   },
   {
     name: "Investment Services",
-    path: "/investment",
+    path: "/investment-services",
     other: [
-      { label: "Portfolio Consultancy", path: "/portfolio" },
-      { label: "Wealth Advisory", path: "/wealth" },
+      { label: "Portfolio Consultancy", path: "/portfolio-consultancy" },
+      { label: "Wealth Advisory", path: "/wealth-advisory" },
       { label: "Retirement Planning", path: "/retirement" },
       { label: "Tax-efficient Investment Planning", path: "/tax" },
       { label: "Mutual Funds & Stock Analysis", path: "/mutual" },
       { label: "Insurance Planning", path: "/insurance" },
-      { label: "Diversified Portfolio Construction", path: "/portfolio" },
+      { label: "Diversified Portfolio Construction", path: "/portfolio-consultancy" },
     ],
   },
   {

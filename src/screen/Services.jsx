@@ -17,7 +17,7 @@ const servicesData = [
     title: "Investment Services",
     desc: "Personalized investment advisory including portfolio management, wealth planning, risk assessment, and tax-efficient investment strategies.",
     icon: <TrendingUp size={32} className="text-[#F49426]" />,
-    path: "/investment",
+    path: "/investment-services",
   },
   {
     title: "Trading Advisory",

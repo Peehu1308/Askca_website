@@ -46,9 +46,9 @@ function App() {
             <Route path="/coporate-finance" element={<Coporate />} />
             <Route path="/why-us" element={<Whyus />} />
 
-            <Route path="/investment" element={<InvestmentServices />} />
-            <Route path="/portfolio" element={<PortfolioConsultancy />} />
-            <Route path="/wealth" element={<WealthAdvisory />} />
+            <Route path="/investment-services" element={<InvestmentServices />} />
+            <Route path="/portfolio-consultancy" element={<PortfolioConsultancy />} />
+            <Route path="/wealth-advisory" element={<WealthAdvisory />} />
             <Route path="/tax" element={<TaxEfficientInvestments />} />
             <Route path="/retirement" element={<RetirementPlanning />} />
             <Route path="/mutual" element={<MutualFundAdvisory />} />
