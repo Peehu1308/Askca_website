@@ -44,7 +44,7 @@ function App() {
             <Route path="/about-us" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/coporate-finance" element={<Coporate />} />
-            <Route path="/why" element={<Whyus />} />
+            <Route path="/why-us" element={<Whyus />} />
 
             <Route path="/investment" element={<InvestmentServices />} />
             <Route path="/portfolio" element={<PortfolioConsultancy />} />

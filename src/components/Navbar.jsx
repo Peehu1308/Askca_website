@@ -307,7 +307,7 @@ const MobileMenu = ({ isOpen }) => {
 
         {/* Links */}
         <div className="space-y-2">
-          <Link to="/why" className="block text-sm hover:text-[#F49426] transition">
+          <Link to="/why-us" className="block text-sm hover:text-[#F49426] transition">
             Why Us
           </Link>
           <Link to="/our-founders" className="block text-sm hover:text-[#F49426] transition">
@@ -437,7 +437,7 @@ const Navbar = () => {
               />
             </div>
 
-            <Link to="/why" className="text-lg font-bold hover:text-[#F49426] transition">
+            <Link to="/why-us" className="text-lg font-bold hover:text-[#F49426] transition">
               Why Us
             </Link>
 
