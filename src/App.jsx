@@ -52,7 +52,7 @@ function App() {
             <Route path="/tax-efficient-investment" element={<TaxEfficientInvestments />} />
             <Route path="/retirement-planning" element={<RetirementPlanning />} />
             <Route path="/mutual-fund-advisory" element={<MutualFundAdvisory />} />
-            <Route path="/insurance" element={<InsurancePlanning />} />
+            <Route path="/insurance-planning" element={<InsurancePlanning />} />
 
             <Route path="/contact" element={<Contact />} />
             <Route path="/trading" element={<Trading/>} />
