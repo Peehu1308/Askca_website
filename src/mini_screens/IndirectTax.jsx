@@ -16,7 +16,7 @@ const IndirectTax = () => {
         </p>
 
         <Link
-          to="/contact"
+          to="/contact-us"
           className="inline-block bg-[#F49426] text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Consult Our Experts
@@ -106,7 +106,7 @@ const IndirectTax = () => {
           Speak with our tax professionals for tailored advice.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="bg-[#F49426] text-white px-10 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Talk to an Expert

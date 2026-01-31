@@ -54,7 +54,7 @@ function App() {
             <Route path="/mutual-fund-advisory" element={<MutualFundAdvisory />} />
             <Route path="/insurance-planning" element={<InsurancePlanning />} />
 
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact-us" element={<Contact />} />
             <Route path="/trading" element={<Trading/>} />
 
             <Route path="/services/direct-tax" element={<DirectTax />} />

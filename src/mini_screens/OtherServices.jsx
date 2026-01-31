@@ -1,7 +1,5 @@
-import React from "react";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import { User2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OtherServices = () => {
   const services = [
@@ -43,7 +41,7 @@ const OtherServices = () => {
           Explore our range of specialized services designed to support your business operations, compliance, and strategic growth.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="inline-block bg-[#F49426] text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Consult Our Experts
@@ -79,7 +77,7 @@ const OtherServices = () => {
           Get in touch with our experts for personalized assistance.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="bg-[#F49426] text-white px-10 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Contact Us

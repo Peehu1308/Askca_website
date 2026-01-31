@@ -1,7 +1,5 @@
-import React from "react";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import { User2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BusinessAdvisory = () => {
   return (
@@ -16,7 +14,7 @@ const BusinessAdvisory = () => {
           We help businesses navigate complex transactions, mergers, and strategic decisions with clarity, compliance, and confidence.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="inline-block bg-[#F49426] text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Consult Our Experts
@@ -108,7 +106,7 @@ const BusinessAdvisory = () => {
           Speak with our advisors for tailored solutions.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="bg-[#F49426] text-white px-10 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Talk to an Expert

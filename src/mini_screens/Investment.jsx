@@ -1,13 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import {
-  Layers,
-  TrendingUp,
-  PiggyBank,
-  ShieldCheck,
-  BarChart3,
-  HeartPulse,
+    BarChart3,
+    HeartPulse,
+    Layers,
+    PiggyBank,
+    ShieldCheck,
+    TrendingUp,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const investmentServices = [
   {
@@ -129,7 +128,7 @@ const InvestmentServices = () => {
           Connect with our experts today to get personalized investment solutions.
         </p>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="bg-[#F49426] text-white px-10 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
           Talk to an Expert

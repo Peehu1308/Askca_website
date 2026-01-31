@@ -313,7 +313,7 @@ const MobileMenu = ({ isOpen }) => {
           <Link to="/our-founders" className="block text-sm hover:text-[#F49426] transition">
             Team
           </Link>
-          <Link to="/contact" className="block text-sm hover:text-[#F49426] transition">
+          <Link to="/contact-us" className="block text-sm hover:text-[#F49426] transition">
             Contact Us
           </Link>
         </div>
@@ -445,7 +445,7 @@ const Navbar = () => {
               Team
             </Link>
 
-            <Link to="/contact" className="text-lg font-bold hover:text-[#F49426] transition">
+            <Link to="/contact-us" className="text-lg font-bold hover:text-[#F49426] transition">
               Contact Us
             </Link>
           </div>
@@ -458,7 +458,7 @@ const Navbar = () => {
         </div>
 
         <Link
-          to="/contact"
+          to="/contact-us"
           className="hidden md:flex lg:flex bg-[#F49426] px-3 md:px-5 py-2 md:py-2.5 rounded-md font-semibold text-sm md:text-base hover:opacity-90 transition"
         >
           Book an Appointment

@@ -91,7 +91,7 @@ const WealthAdvisory = () => {
             compliant, and long-term wealth strategy.
           </p>
           <a
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center justify-center bg-[#F49426] text-white px-10 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition"
           >
             Schedule a Consultation
