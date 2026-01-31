@@ -90,7 +90,7 @@ const HomeScreen = () => {
   title="Corporate Finance"
   content="Advisory on capital structuring, financial modeling, mergers and acquisitions, fund-raising strategies, and long-term financial planning to support business growth."
   icon={<Landmark size={36} className="text-[#F49426]" />}
-  link="/coporate"
+  link="/coporate-finance"
 />
 
 <Services_box

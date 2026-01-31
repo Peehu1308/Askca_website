@@ -12,7 +12,7 @@ import logoimg from "../assets/Logo_img.png";
 const services = [
   {
     name: "Corporate Finance",
-    path: "/coporate",
+    path: "/coporate-finance",
     other: [
       { label: "Direct Tax", path: "/services/direct-tax" },
       { label: "Indirect Tax (GST)", path: "/services/indirect-tax" },

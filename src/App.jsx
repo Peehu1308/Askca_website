@@ -43,7 +43,7 @@ function App() {
             <Route path="/our-founders" element={<Team />} />
             <Route path="/about-us" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/coporate" element={<Coporate />} />
+            <Route path="/coporate-finance" element={<Coporate />} />
             <Route path="/why" element={<Whyus />} />
 
             <Route path="/investment" element={<InvestmentServices />} />

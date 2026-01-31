@@ -1,15 +1,9 @@
-import React from "react";
-import Footer from "../components/Footer";
 import {
-  User2,
-  Briefcase,
-  PieChart,
-  FileText,
-  TargetIcon,
-  BarChart3,
-  TrendingUp,
-  ShieldCheck,
-  HelpingHandIcon,
+    BarChart3,
+    Briefcase,
+    HelpingHandIcon,
+    ShieldCheck,
+    TrendingUp
 } from "lucide-react";
 
 const servicesData = [
@@ -17,7 +11,7 @@ const servicesData = [
     title: "Corporate Finance",
     desc: "Strategic financial advisory covering capital structuring, valuations, fundraising, financial modeling, and long-term business growth planning.",
     icon: <Briefcase size={32} className="text-[#F49426]" />,
-    path: "/coporate",
+    path: "/coporate-finance",
   },
   {
     title: "Investment Services",
