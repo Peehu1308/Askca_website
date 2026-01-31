@@ -1,9 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import { ArrowBigDownDashIcon } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logoimg.svg";
-import Logo from "../assets/tagline.png";
-import logoimg from "../assets/Logo_img.png"
-import { ArrowBigDown, ArrowBigDownDashIcon, ArrowDownIcon, MoveDown } from "lucide-react";
+import logoimg from "../assets/Logo_img.png";
 
 
 
@@ -170,7 +168,7 @@ const AboutMegaMenu = ({ isOpen, onMouseEnter, onMouseLeave }) => {
             advisory, compliance, and financial solutions with integrity and precision.
           </p>
           <Link
-            to="/about"
+            to="/about-us"
             className="border border-white px-4 md:px-6 py-2 text-sm hover:bg-white hover:text-black transition"
           >
             Learn More
@@ -312,7 +310,7 @@ const MobileMenu = ({ isOpen }) => {
           <Link to="/why" className="block text-sm hover:text-[#F49426] transition">
             Why Us
           </Link>
-          <Link to="/team" className="block text-sm hover:text-[#F49426] transition">
+          <Link to="/our-founders" className="block text-sm hover:text-[#F49426] transition">
             Team
           </Link>
           <Link to="/contact" className="block text-sm hover:text-[#F49426] transition">
@@ -430,7 +428,7 @@ const Navbar = () => {
                 onClick={toggleAbout}
                 className="text-lg font-bold hover:text-[#F49426] transition cursor-pointer"
               >
-                <Link to="/about">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </span>
               <AboutMegaMenu
                 isOpen={openAbout}
@@ -443,7 +441,7 @@ const Navbar = () => {
               Why Us
             </Link>
 
-            <Link to="/team" className="text-lg font-bold hover:text-[#F49426] transition">
+            <Link to="/our-founders" className="text-lg font-bold hover:text-[#F49426] transition">
               Team
             </Link>
 

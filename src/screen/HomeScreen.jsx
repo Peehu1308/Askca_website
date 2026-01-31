@@ -1,16 +1,12 @@
-import React from "react";
-import about from "../assets/about.jpeg";
-import Services_box from "../components/Services_box";
-import {Landmark, Layers2, LineChart, TrendingUp, User2} from "lucide-react";
-import { Faq_section } from "../components/Faq_section";
-import Team_box from "../components/Team_box";
-import Footer from "../components/Footer";
+import { Landmark, Layers2, LineChart, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import building from "../assets/building.jpg";
+import about from "../assets/about.jpeg";
+import { Faq_section } from "../components/Faq_section";
+import Services_box from "../components/Services_box";
+import Team_box from "../components/Team_box";
 
+import mainimg from "../assets/mainimg.jpg";
 import market from "../assets/market.jpg";
-import analyst from "../assets/stockan.jpg"
-import mainimg from "../assets/mainimg.jpg"
 
 const HomeScreen = () => {
   return (
@@ -62,7 +58,7 @@ const HomeScreen = () => {
       </div>
 
       <Link
-        to="/about"
+        to="/about-us"
         className="inline-block bg-[#F49426] text-white px-10 py-4 rounded-lg font-semibold hover:bg-orange-600 transition shadow-md hover:shadow-lg"
       >
         Know More

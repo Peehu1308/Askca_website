@@ -1,8 +1,5 @@
-import React from "react";
-import Footer from "../components/Footer";
-import aboutImg from "../assets/about.jpeg";
-import laptop from "../assets/laptop.jpg"
-import blackimg from "../assets/black.jpg"
+import blackimg from "../assets/black.jpg";
+import laptop from "../assets/laptop.jpg";
 
 const About = () => {
   return (

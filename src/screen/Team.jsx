@@ -1,6 +1,5 @@
-import React from 'react'
-import Team_box from '../components/Team_box'
 import about from "../assets/about.jpeg"
+import Team_box from '../components/Team_box'
 
 const Team = () => {
   return (
