@@ -31,6 +31,7 @@ import Scrolltotop from "./Scrolltotop";
 function App() {
   return (
     <div className="bg-[#F5F6F7]">
+      
       <BrowserRouter>
 
         <Navbar />
